@@ -12,7 +12,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Nome</label>
+                            <label for="name" class="col-md-4 control-label">Nome Completo</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
@@ -26,7 +26,9 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('matricula') ? ' has-error' : '' }}">
-                            <label for="matricula" class="col-md-4 control-label">Número de Matrícula</label>
+                            <label for="matricula" class="col-md-4 control-label">Número de Matrícula
+                            <p><h6>(apenas números)</h6></p>
+                            </label>
 
                             <div class="col-md-6">
                                 <input id="matricula" type="text" class="form-control" name="matricula" maxlength="10" onKeyDown="Mascara(this,Matricula);" onKeyPress="Mascara(this,Matricula);" onKeyUp="Mascara(this,Matricula);" value="{{ old('matricula') }}" required>
@@ -40,7 +42,9 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('periodo') ? ' has-error' : '' }}">
-                            <label for="periodo" class="col-md-4 control-label">Periodo</label>
+                            <label for="periodo" class="col-md-4 control-label">Periodo
+                                <p><h6>(apenas números)</h6></p>
+                            </label>
 
                             <div class="col-md-6">
                                 <input id="periodo" type="number" class="form-control" name="periodo" value="{{ old('periodo') }}" required>
@@ -54,7 +58,9 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('dataNasc') ? ' has-error' : '' }}">
-                            <label for="dataNasc" class="col-md-4 control-label">Data de Nascimento</label>
+                            <label for="dataNasc" class="col-md-4 control-label">Data de Nascimento
+                                <p><h6>(apenas números)</h6></p>
+                            </label>
 
                             <div class="col-md-6">
                                 <input id="dataNasc" type="date" class="form-control" name="dataNasc" value="{{ old('dataNasc') }}" required>

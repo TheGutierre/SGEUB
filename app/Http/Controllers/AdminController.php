@@ -122,7 +122,6 @@ class AdminController extends Controller
 
             $taskPes = Pessoa::where('idPessoa', $id)->first();
 
-
             // show the edit form and pass the nerd
             return view('adm.updateAdm', ['user' => $taskUse, 'pessoa' => $taskPes]);
         }
@@ -135,7 +134,6 @@ class AdminController extends Controller
     {
         $iduser = Auth::user()->idPessoa;
 
-        //print dd($iduser);
         // get dados do Usuário
         $taskUse = User::where('idPessoa', $iduser)->first();
 

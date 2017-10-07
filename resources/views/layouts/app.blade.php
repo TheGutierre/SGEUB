@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'SGEUB') }}</title>
+    <title>SGEUB</title>
     <script src="{{ asset('js/mascaras.js') }}"></script>
 
     <!-- Styles -->

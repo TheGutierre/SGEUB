@@ -52,6 +52,9 @@
             {{ Session::get('flash_message') }}
         </div>
     @endif
+
+    <div id="abc">
+
     <div class="col-md-4 col-md-offset-7">
 
         <form class="navbar-form navbar-right" method="POST">
@@ -104,6 +107,6 @@
 
             </div>
 
-
+</div>
 
 @endsection
